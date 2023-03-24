@@ -16,6 +16,9 @@ nav {
     flex-direction: row;
     height: 60px;
     padding: 0px 50px;
+    width: 100%;
+    z-index: 101;
+    position: fixed;
     justify-content: space-between;
 }
 
@@ -238,9 +241,65 @@ nav::after {
     color: black;
     display: flex;
     font-weight: bold;
-    left: -60%;
+    left: -75%;
     top: -25%;
     -webkit-text-stroke: 1px white;
 	-webkit-text-fill-color: black;
     font-size: 12rem;
+}
+
+/* footer section */
+
+footer {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    color: rgb(157, 155, 155);
+    font-size: .75rem;
+}
+.footer-wrapper {
+    height: 100%;
+    width: 50%;
+}
+.social-media-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media-icons-container img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-media-icons-container img:hover {
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.footer-col > p{
+    margin: 20px 0px;
+}
+.footer-col > p:hover {
+    color: white;
+    cursor: pointer;
+}
+.footer-col.col1 button {
+    background: none;
+    color: rgb(157, 155, 155);
+    border: 1px solid rgb(157, 155, 155);
+    padding: 5px;
+}
+
+.footer-col.col1 button:hover {
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
 }
