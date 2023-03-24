@@ -127,7 +127,6 @@ nav::after {
     color: white;
 }
 
-
 .movie-contents {
     height: 600px;
     margin: 0px 50px;
@@ -227,6 +226,7 @@ nav::after {
     display: flex;
     position: relative;
     margin-left: 70px;
+    transition:  1s;
 }
 
 .movie-image-wrapper-background {
@@ -234,6 +234,7 @@ nav::after {
     display: flex;
     position: relative;
 }
+
 
 
 .movie-rank-text {
@@ -248,6 +249,97 @@ nav::after {
     font-size: 12rem;
 }
 
+
+.image-show-hovered-container {
+    transition: 5s;
+    position: absolute;
+    z-index: 103;
+    top: -50%;
+    background-color: #222;
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image-hover-div {
+    height: 250px;
+}
+
+.image-show-hovered-container-invisible {
+    display: none;
+}
+
+.movie-contents-wrapper {
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-contents-wrapper h1 {
+    color:  white;
+}
+
+.hovered-image-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hovered-image-button-container button {
+    background: none;
+
+    border: none;
+}
+.hovered-image-button-container img {
+    height: 50px;
+    width: 50px;
+}
+
+.hovered-image-button-container button:hover {
+    cursor: pointer;
+}
+
+.hovered-images-button-container-left {
+    display: flex;
+    gap:  10px;
+}
+
+.movie-contents-wrapper {
+    color:  white;
+}
+
+.movie-hovered-texts {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.genres-text-container ul{
+    display: flex;    
+    gap: 30px;
+    
+}
+
+.genres-text-container ul li:first-child{
+    list-style-type: none;
+}
+
+.genres-text-container ul li::marker {
+    color: #555;
+}
+
+.movie-hovered-texts .age-limit-text {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.movie-hovered-texts .resolution-text {
+    border: 1px solid white;
+}
 /* footer section */
 
 footer {
@@ -303,3 +395,4 @@ footer {
     color: white;
     cursor: pointer;
 }
+

@@ -5,63 +5,72 @@
         "backgroundImage": "https://image.tmdb.org/t/p/original/6lrlxSDk4gAhmOHtstgtVUfJfau.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/kl8J3WvzJq6QGX7qNmP0ps4ZTSO.jpg",
         "title": "Nine Days",
-        "description": "A reclusive man conducts a series of interviews with human souls for a chance to be born."
+        "description": "A reclusive man conducts a series of interviews with human souls for a chance to be born.",
+        "genres" : ["Dark", "Drama", "Revenge"]
       },
       {
         "id": 2,
         "backgroundImage": "https://image.tmdb.org/t/p/original/beEjNV725OEZ7JZQxNN1eZ0Wyt3.jpg",
         "title": "Rampart",
         "posterImage" : "https://image.tmdb.org/t/p/original/tohTRgCqOnFwAESAmrRlTUdKeMB.jpg", 
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Dark", "Horror", "Comedy"]
       },
       {
         "id": 3,
         "backgroundImage": "https://image.tmdb.org/t/p/original/xQTsSHdAacaFmhc6vSYcRn52thT.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/r9gEJ6BrgcDoRpA8dByGcpK1ScN.jpg",
         "title": "Who's Your Daddy?",
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Comedy", "Love", "Slice of Life"]
       }, 
       {
         "id": 4,
         "backgroundImage": "https://image.tmdb.org/t/p/original/tPssChaKUFIfE54jbWTGpDu4d4K.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/xxZ6VUmnsxNiMa812IP3ohUf3BS.jpg", 
         "title": "Donovan's Reef",
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Horror", "Action", "Dark"]
       },
       {
         "id": 5,
         "backgroundImage": "https://image.tmdb.org/t/p/original/1mlos1qMlIWCM9FAAafhTdc9Tys.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/xxZ6VUmnsxNiMa812IP3ohUf3BS.jpg", 
         "title": "FearDotCom",
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Horror", "Action", "Dark"]
       },
       {
         "id": 6,
         "backgroundImage": "https://image.tmdb.org/t/p/original/6lrlxSDk4gAhmOHtstgtVUfJfau.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/kl8J3WvzJq6QGX7qNmP0ps4ZTSO.jpg",
         "title": "Nine Days",
-        "description": "A reclusive man conducts a series of interviews with human souls for a chance to be born."
+        "description": "A reclusive man conducts a series of interviews with human souls for a chance to be born.",
+        "genres" : ["Comedy", "Love", "Slice of Life"]
       },
       {
         "id": 7,
         "backgroundImage": "https://image.tmdb.org/t/p/original/beEjNV725OEZ7JZQxNN1eZ0Wyt3.jpg",
         "title": "Rampart",
         "posterImage" : "https://image.tmdb.org/t/p/original/tohTRgCqOnFwAESAmrRlTUdKeMB.jpg", 
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Dark", "Horror", "Comedy"]
       },
       {
         "id": 8,
         "backgroundImage": "https://image.tmdb.org/t/p/original/xQTsSHdAacaFmhc6vSYcRn52thT.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/r9gEJ6BrgcDoRpA8dByGcpK1ScN.jpg",
         "title": "Who's Your Daddy?",
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Dark", "Drama", "Revenge"]
       }, 
       {
         "id": 9,
         "backgroundImage": "https://image.tmdb.org/t/p/original/tPssChaKUFIfE54jbWTGpDu4d4K.jpg",
         "posterImage" : "https://image.tmdb.org/t/p/original/xxZ6VUmnsxNiMa812IP3ohUf3BS.jpg", 
         "title": "Donovan's Reef",
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
+        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival.",
+        "genres" : ["Dark", "Drama", "Revenge"]
       }
     ]
   }
