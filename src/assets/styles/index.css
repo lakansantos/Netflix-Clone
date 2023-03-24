@@ -6,11 +6,10 @@
 }
 
 body {
-    height: fit-content;
+    height: 100vh;
 }
 .App {
     background-color: #111;
-    height: 2400px;
 }
 nav {
     display: flex;
@@ -90,6 +89,7 @@ nav::after {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     height: 100%; 
 }
@@ -98,11 +98,11 @@ nav::after {
 .banner::after {
     content: "";
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 0;
     width: 100%;
-    z-index: -1;
-    box-shadow: 0px 0px 70px 100px #111;
+    z-index: 0;
+    box-shadow: 0px 0px 50px 70px #111;
 }
 
 .right-section {
@@ -181,10 +181,9 @@ nav::after {
 
 .movie-rows {
     height: 400px;
-    margin: -50px 0px 50px 50px;
+    margin: -160px 0px 50px 50px;
     overflow-y: auto;
     z-index: 101;
-    border: 1px solid white;
 }
 
 .movie-rows-title {
@@ -201,14 +200,47 @@ nav::after {
 .movie-rows::-webkit-scrollbar {
     display: none;
 }
-.row-movie-image {
+.row-movie-image-background{
     height: 150px;
-    width: 300px;
     object-fit: contain;
     flex-direction: column;
     z-index: 100;
+    position: relative;
 }
 
-.row-movie-image:hover {
+.row-movie-image-poster{
+    height: 150px;
+    object-fit: contain;
+    flex-direction: column;
+    z-index: 100;
+    position: relative;
+}
+.row-movie-image-background, .row-movie-image-poster:hover {
     cursor: pointer;
+}
+
+.movie-image-wrapper-poster {
+    width: 500px;
+    display: flex;
+    position: relative;
+    margin-left: 70px;
+}
+
+.movie-image-wrapper-background {
+    width: 500px;
+    display: flex;
+    position: relative;
+}
+
+
+.movie-rank-text {
+    position: absolute;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    left: -60%;
+    top: -25%;
+    -webkit-text-stroke: 1px white;
+	-webkit-text-fill-color: black;
+    font-size: 12rem;
 }

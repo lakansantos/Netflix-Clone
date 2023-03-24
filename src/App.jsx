@@ -16,9 +16,22 @@ function App() {
   return (
     <div className="App">
       <Banner />     
-      <MovieRows title="New releases"/>
-      <MovieRows title="Top rated"/>
-      <MovieRows title="Ntest"/>
+      <MovieRows 
+      title="New releases" 
+      isPoster={false}
+      />
+      <MovieRows 
+      title="Top rated"
+      isPoster={true}
+      />
+      <MovieRows 
+      title="Ntest"
+      isPoster={true}
+      />
+      <MovieRows 
+      title="Popular"
+      isPoster={false}
+      />
     </div>
   )
 }

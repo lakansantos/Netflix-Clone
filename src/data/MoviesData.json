@@ -62,13 +62,6 @@
         "posterImage" : "https://image.tmdb.org/t/p/original/xxZ6VUmnsxNiMa812IP3ohUf3BS.jpg", 
         "title": "Donovan's Reef",
         "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
-      },
-      {
-        "id": 10,
-        "backgroundImage": "https://image.tmdb.org/t/p/original/1mlos1qMlIWCM9FAAafhTdc9Tys.jpg",
-        "posterImage" : "https://image.tmdb.org/t/p/original/xxZ6VUmnsxNiMa812IP3ohUf3BS.jpg", 
-        "title": "FearDotCom",
-        "description": "Follows veteran police officer Dave Brown, the last of the renegade cops, as he struggles to take care of his family, and fights for his own survival."
       }
     ]
   }
