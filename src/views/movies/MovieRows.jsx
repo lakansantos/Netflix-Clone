@@ -5,19 +5,22 @@ import like from '/src/assets/images/like.png'
 import check from '/src/assets/images/check.png'
 import dropDown from '/src/assets/images/dropDown.png'
 import React from "react";
+
 const MovieRows = ({title, isPoster, hasNumber}) => {
+    
     const [data, setData] = useState([])
     const [hovered, setHovered] = useState(null)
 
-    const handleHover = (event, movieID) => {
-        event.stopPropagation();
+
+    const handleHover = movieID => {
         setHovered(movieID)
     }
 
-    const handleLeaveHover = (event) => {
-        event.stopPropagation()
+    const handleLeaveHover = () => {
         setHovered(null)
     }
+
+    //getting the movies data
     useEffect(() => {
         axios.get('src/data/MoviesData.json')
             .then(response => {
@@ -35,7 +38,7 @@ const MovieRows = ({title, isPoster, hasNumber}) => {
                 {data.map(movie => {
                    return (
                     <div key={movie.id} className={`${isPoster ? 'movie-image-wrapper-poster' : 'movie-image-wrapper-background'}`}  
-                    onMouseEnter={(event) => handleHover(event, movie.id)}
+                    onMouseEnter={(event) => handleHover(movie.id)}
                     onMouseLeave={(event) => handleLeaveHover(event)}>
                         {hasNumber ? <span className="movie-rank-text">{movie.id}</span> : null}
                         <img 
