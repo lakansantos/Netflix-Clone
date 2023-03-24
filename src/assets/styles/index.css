@@ -242,7 +242,7 @@ nav::after {
     color: black;
     display: flex;
     font-weight: bold;
-    left: -75%;
+    left: -55%;
     top: -25%;
     -webkit-text-stroke: 1px white;
 	-webkit-text-fill-color: black;
