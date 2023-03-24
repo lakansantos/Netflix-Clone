@@ -1,5 +1,6 @@
 import netflixLogo from '/src/assets/images/netflix.png'
 import {FiSearch} from 'react-icons/fi'
+import {CiMenuBurger} from 'react-icons/ci'
 import {BiBell} from 'react-icons/bi'
 import avatarNetflixLogo from '/src/assets/images/avatar.png'
 import {IoMdArrowDropdown} from 'react-icons/io'
@@ -79,6 +80,10 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
+            </div>
+
+            <div className="burger-icon-container">
+                <CiMenuBurger />
             </div>
 
         </nav>
