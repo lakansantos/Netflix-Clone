@@ -1,6 +1,7 @@
 import Navbar from "./MoviesNavbar";
 import {BsFillPlayFill} from 'react-icons/bs'
 import {AiOutlineInfoCircle} from 'react-icons/ai'
+import {AiOutlineReload} from 'react-icons/ai'
 const Banner = () => {
     return (
         <div className="banner">
@@ -17,6 +18,14 @@ const Banner = () => {
                         <span><AiOutlineInfoCircle style={{fontSize: '1.7rem'}} /></span> 
                         More info
                     </button>
+                    <div className="guidance-info-container">
+                        <div className="icon-container">
+                            <AiOutlineReload className="banner-reload-icon"/>
+                        </div>
+                        <div className="guidance-text-container">
+                            <p>PG</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
