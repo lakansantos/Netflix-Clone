@@ -489,6 +489,10 @@ footer {
         width: 100%;
         margin: 50px;
     }
+
+    .guidance-info-container {
+        display: none;
+    }
 }   
 
 
