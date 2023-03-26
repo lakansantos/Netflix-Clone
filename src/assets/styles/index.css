@@ -92,7 +92,7 @@ nav::after {
 
 .banner {
     height: 75vh;
-    background: url(src/assets/images/Lucifer.jpeg) center/cover no-repeat rgba(1, 1, 1, .25);
+    background: url(src/assets/images/Lucifer.jpeg) center/cover no-repeat rgba(1, 1, 1, .55);
     background-blend-mode: darken;
 }
 
@@ -430,6 +430,10 @@ footer {
         display: none;
     }
 
+    .links-section {
+        width: 10%;
+    }
+
     .burger-icon-container {
         display: flex;
         width: 5%;
@@ -440,7 +444,39 @@ footer {
 
     nav {
         padding: 0 20px;
-        gap: 50px;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        margin: 50px;
     }
 }   
+
+
+
+@media (max-width: 420px) {
+    nav {
+        width: 100%;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .movie-contents {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    
+
+    .movie-rows {
+        margin: 0;
+    }
+
+    .footer-wrapper {
+         margin: 20px;
+    }
+}
