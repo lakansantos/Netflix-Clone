@@ -4,9 +4,27 @@ import {CiMenuBurger} from 'react-icons/ci'
 import {BiBell} from 'react-icons/bi'
 import avatarNetflixLogo from '/src/assets/images/avatar.png'
 import {IoMdArrowDropdown} from 'react-icons/io'
+import { useState, useEffect } from 'react'
 const Navbar = () => {
+
+    const [showNav, setShowNav] = useState(false)
+    useEffect(() => {
+        const handleShow = () => {
+            if(window.scrollY > 30){
+                setShowNav(true)
+            } else {
+                setShowNav(false)
+            };
+
+        } 
+        window.addEventListener('scroll', handleShow)
+        return() => window.removeEventListener('scroll', handleShow)
+    }, [])
+    
     return (
-        <nav>
+        <nav 
+        style={{
+            backgroundColor: `${showNav ? 'rgba(0, 0, 0, .5)' : ''}`}}>
             <div className="links-section">
                 <img src={netflixLogo} alt="" className="nav__netflix-logo"/>
                 <ul>
@@ -53,9 +71,22 @@ const Navbar = () => {
                         <a href="">
                             <BiBell 
                                 style={{
-                                    fontSize: '1.5rem'
+                                    fontSize: '1.5rem',
+                                    position: 'relative'
                                 }}
-                            />
+                            > 
+                                    <span style={{
+                                    backgroundColor: 'red',
+                                    borderRadius: '50%',
+                                    width: 'fit-content',
+                                    position: 'absolute',
+                                    top: '10px',
+                                    left: '0px',
+                                    color: 'white',
+                                    zIndex: '101'
+                                }}>3
+                            </span>
+                            </BiBell>
                         </a>
                     </li>
                     <li>

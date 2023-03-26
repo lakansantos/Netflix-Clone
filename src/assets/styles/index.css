@@ -22,6 +22,7 @@ nav {
     z-index: 101;
     position: fixed;
     justify-content: space-between;
+    transition: .7s ease-in-out;
 }
 
 .nav__netflix-logo {
