@@ -564,7 +564,7 @@ footer {
 }
 
 
-@media (max-width: 950px) {
+@media (min-width: 420px) and (max-width: 950px) {
     .banner-movie-description {
         width: 50%;
         text-align: justify;
