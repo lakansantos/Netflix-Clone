@@ -93,7 +93,7 @@ nav::after {
 
 .banner {
     height: 75vh;
-    background: url(src/assets/images/Lucifer.jpeg) center/cover no-repeat rgba(1, 1, 1, .55);
+    background: url(src/assets/images/magician-elephant.jpeg) center/cover no-repeat rgba(1, 1, 1, .55);
     background-blend-mode: darken;
 }
 
@@ -203,6 +203,43 @@ nav::after {
     padding: 5px;
     color: white;
 }
+.movie-title {
+    width: 400px;
+    object-fit: contain;
+}
+
+.top-ten-text-container {
+    width: 240px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-ten-text-span {
+    width: 20%;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+    background-color: red;
+    border-radius: 5px;
+}
+.netflix-logo-banner {
+    width: 50px;
+    height: 50px;
+}
+
+.netflix-film-container {
+    display: flex;
+    align-items: center;
+    color: rgb(182, 179, 179);
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.rank-today-text {
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .banner-reload-icon:hover {
     cursor: pointer;
@@ -234,7 +271,7 @@ nav::after {
 /* movie rows */
 .movie-rows {
     height: 400px;
-    margin: -160px 0px 50px 50px;
+    margin: -120px 0px 50px 50px;
     overflow-y: auto;
     z-index: 101;
 }
@@ -494,6 +531,10 @@ footer {
     .guidance-info-container {
         display: none;
     }
+
+    .movie-rows {
+        margin: 0;
+    }
 }   
 
 
@@ -513,13 +554,19 @@ footer {
         margin: 0px;
     }
 
-    
-
-    .movie-rows {
-        margin: 0;
-    }
-
     .footer-wrapper {
          margin: 20px;
+    }
+
+    .movie-title {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .banner-movie-description {
+        width: 50%;
+        text-align: justify;
     }
 }
