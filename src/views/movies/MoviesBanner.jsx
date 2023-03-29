@@ -3,6 +3,7 @@ import {AiOutlineInfoCircle} from 'react-icons/ai'
 import {AiOutlineReload} from 'react-icons/ai'
 import movieTitle  from '/src/assets/images/movie-title.png'
 import netflixLogo from '/src/assets/images/netflix-logo.png'
+
 const Banner = () => {
     return (
         <div className="banner">
