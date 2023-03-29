@@ -1,4 +1,3 @@
-import Navbar from "./MoviesNavbar";
 import {BsFillPlayFill} from 'react-icons/bs'
 import {AiOutlineInfoCircle} from 'react-icons/ai'
 import {AiOutlineReload} from 'react-icons/ai'
@@ -7,9 +6,7 @@ import netflixLogo from '/src/assets/images/netflix-logo.png'
 const Banner = () => {
     return (
         <div className="banner">
-            <Navbar />
             <div className="movie-contents">
-               
                 <div className="netflix-film-container">
                     <img src={netflixLogo} alt="netflix" className="netflix-logo-banner"/>
                     <p>FILM</p>

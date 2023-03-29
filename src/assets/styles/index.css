@@ -92,7 +92,7 @@ nav::after {
 /* Banner section */
 
 .banner {
-    height: 75vh;
+    height: 90vh;
     background: url(src/assets/images/magician-elephant.jpeg) center/cover no-repeat rgba(1, 1, 1, .55);
     background-blend-mode: darken;
 }
@@ -113,11 +113,11 @@ nav::after {
 .banner::after {
     content: "";
     position: absolute;
-    bottom: 20%;
+    bottom: 0%;
     left: 0;
     width: 100%;
     z-index: 100;
-    height: 5%;
+    height: 3%;
     box-shadow: 0px 0px 50px 70px #111;
 }
 
@@ -158,7 +158,8 @@ nav::after {
 .banner-movie-description {
     color: white;
     font-weight: 100;
-    width: 25%;
+    width: 30%;
+    text-align: left;
 }
 .banner-movie-button-container {
     display: flex;
@@ -271,20 +272,21 @@ nav::after {
 /* movie rows */
 .movie-rows {
     height: 400px;
-    margin: -120px 0px 50px 50px;
-    overflow-y: auto;
-    z-index: 101;
+    margin: -120px 0px 0px 50px;
+    overflow: auto;
+    z-index: 200;
 }
 
 .movie-rows-title {
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .movie-images-container {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .movie-rows::-webkit-scrollbar {
@@ -330,7 +332,7 @@ nav::after {
     color: black;
     display: flex;
     font-weight: bold;
-    left: -55%;
+    left: -70%;
     top: -25%;
     -webkit-text-stroke: 1px white;
 	-webkit-text-fill-color: black;
