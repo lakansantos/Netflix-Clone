@@ -11,7 +11,7 @@ const MovieImagesContainer = (props) => {
         isPoster, 
         hasNumber
     } = props;
-    
+
     const [hovered, setHovered] = useState(null)
     const handleHover = movieID => {
         setHovered(movieID)
@@ -25,8 +25,8 @@ const MovieImagesContainer = (props) => {
                 {data.map(movie => {
                    return (
                     <div key={movie.id} className={`${isPoster ? 'movie-image-wrapper-poster' : 'movie-image-wrapper-background'}`}  
-                    onMouseEnter={(event) => handleHover(movie.id)}
-                    onMouseLeave={(event) => handleLeaveHover(event)}>
+                    onMouseEnter={() => handleHover(movie.id)}
+                    onMouseLeave={() => handleLeaveHover()}>
                         {hasNumber ? <span className="movie-rank-text">{movie.id}</span> : null}
                         <img 
                         src={isPoster ? movie.posterImage : movie.backgroundImage} 

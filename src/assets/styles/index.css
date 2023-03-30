@@ -271,10 +271,10 @@ nav::after {
 }
 /* movie rows */
 .movie-rows {
-    height: 400px;
-    margin: -120px 0px 0px 50px;
+    height: 300px;
+    margin: -120px 0px 50px 50px;
     overflow: auto;
-    z-index: 200;
+    z-index: 100;
     position: relative;
 }
 

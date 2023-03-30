@@ -9,7 +9,6 @@ const MovieRows = (props) => {
         hasNumber
     } = props;
 
-
     const data = useGetMovies();
 
     return (
