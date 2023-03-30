@@ -3,6 +3,7 @@ import playButton from '/src/assets/images/play-button.png'
 import like from '/src/assets/images/like.png'
 import check from '/src/assets/images/check.png'
 import dropDown from '/src/assets/images/dropDown.png'
+import cx from 'classnames'
 
 const MovieImagesContainerItem = (props) => {
     const {
@@ -10,6 +11,18 @@ const MovieImagesContainerItem = (props) => {
         isPoster, 
         hasNumber
     } = props;
+
+    const imageWrapperClasses = cx(
+        'movie-image-wrapper-background', 
+        isPoster && 
+        'movie-image-wrapper-poster'
+    )
+
+    const imageClasses = cx(
+        'row-movie-image-background',
+        isPoster &&
+        'row-movie-image-poster'
+    )
 
     const [hovered, setHovered] = useState(null)
     const handleHover = movieID => {
@@ -20,14 +33,18 @@ const MovieImagesContainerItem = (props) => {
         setHovered(null)
     }
     return (
-        <div key={movie.id} className={`${isPoster ? 'movie-image-wrapper-poster' : 'movie-image-wrapper-background'}`}  
+        <div key={movie.id} className={imageWrapperClasses}  
             onMouseEnter={() => handleHover(movie.id)}
             onMouseLeave={() => handleLeaveHover()}>
-                {hasNumber ? <span className="movie-rank-text">{movie.id}</span> : null}
+                {hasNumber ? 
+                <span className="movie-rank-text">{movie.id}</span> 
+                : 
+                null
+                }
                 <img 
                 src={isPoster ? movie.posterImage : movie.backgroundImage} 
                 alt={movie.title}
-                className={`${isPoster ?  'row-movie-image-poster' : 'row-movie-image-background'} ${hovered ? 'disappear' : ''} `}
+                className={`${imageClasses} ${hovered ? 'disappear' : ''} `}
                 />
                 {hovered === movie.id &&
                     <div className="image-show-hovered-container">

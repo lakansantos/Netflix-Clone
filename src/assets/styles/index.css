@@ -271,7 +271,7 @@ nav::after {
 }
 /* movie rows */
 .movie-rows {
-    height: 400px;
+    height: 350px;
     margin: -120px 0px 0px 50px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -335,7 +335,7 @@ nav::after {
     color: black;
     display: flex;
     font-weight: bold;
-    left: -70%;
+    left: -55%;
     top: -25%;
     -webkit-text-stroke: 1px white;
 	-webkit-text-fill-color: black;
