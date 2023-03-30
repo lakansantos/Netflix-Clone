@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <nav 
         style={{
-            backgroundColor: `${showNav ? 'rgba(0, 0, 0, .5)' : ''}`}}>
+            backgroundColor: `${showNav ? 'rgba(0, 0, 0, .9)' : ''}`}}>
             <div className="links-section">
                 <img src={netflixLogo} alt="" className="nav__netflix-logo"/>
                 <ul>
