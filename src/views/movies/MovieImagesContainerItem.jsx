@@ -50,8 +50,9 @@ const MovieImagesContainerItem = (props) => {
                     <div className="image-show-hovered-container">
                         <div className="movie-background" 
                         style={{
-                            background: `url(${movie.backgroundImage}) no-repeat center/cover`,
-                            height: '50%',
+                            background: `url(${movie.backgroundImage}) 
+                            no-repeat 
+                            center/cover`,
                         }}>
                         </div>
                         <div className="movie-contents-wrapper">

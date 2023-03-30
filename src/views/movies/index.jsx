@@ -3,8 +3,6 @@ import Banner from "./MoviesBanner"
 import Navbar from "./MoviesNavbar";
 import MovieFooter from "./MovieFooter"
 
-
-
 function Index() {
     return (
         <>
