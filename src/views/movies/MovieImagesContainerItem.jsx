@@ -33,7 +33,8 @@ const MovieImagesContainerItem = (props) => {
         setHovered(null)
     }
     return (
-        <div key={movie.id} className={imageWrapperClasses}  
+        <div key={movie.id} 
+            className={imageWrapperClasses}  
             onMouseEnter={() => handleHover(movie.id)}
             onMouseLeave={() => handleLeaveHover()}>
                 {hasNumber ? 
