@@ -371,7 +371,7 @@ nav::after {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 5px 5px 5px black, -5px 10px 5px black;
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .movie-contents-wrapper h1 {
