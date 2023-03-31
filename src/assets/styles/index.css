@@ -10,6 +10,7 @@ body {
 }
 .App {
     background-color: #111;
+    overflow: hidden;
 }
 
 /* Navigation */
@@ -273,9 +274,6 @@ nav::after {
 .movie-rows {
     height: 350px;
     margin: -120px 0px 0px 50px;
-    position: relative;
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 
 .movie-rows-title {
@@ -290,7 +288,9 @@ nav::after {
 .movie-images-container {
     display: flex;
     width: 100%;
-    gap: 5px;
+    position: relative;
+    gap: 10px;
+    pointer-events: none;
 }
 
 .movie-rows::-webkit-scrollbar {
@@ -313,6 +313,7 @@ nav::after {
 }
 .row-movie-image-background, .row-movie-image-poster:hover {
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .movie-image-wrapper-poster {
@@ -320,7 +321,6 @@ nav::after {
     display: flex;
     position: relative;
     margin-left: 70px;
-    transition:  1s;
 }
 
 .movie-image-wrapper-background {
@@ -329,8 +329,6 @@ nav::after {
     position: relative;
 }
 
-
-
 .movie-rank-text {
     position: absolute;
     color: black;
@@ -338,9 +336,9 @@ nav::after {
     font-weight: bold;
     left: -55%;
     top: -25%;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 3px gray;
 	-webkit-text-fill-color: black;
-    font-size: 12rem;
+    font-size: 12.7rem;
 }
 
 /* styles for image after being hovered */
@@ -349,20 +347,17 @@ nav::after {
     z-index: 110;
     top: -40%;
     background-color: #222;
+    border-radius: 20px;
     width: 500px;
-    height: 350px;
-    border-radius: 30px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-}
-
-
-.image-hover-div {
-    height: 250px;
+    pointer-events: auto;
 }
 
 .movie-background {
     height: 50%;
+    border-radius: 20px 20px 0 0;
 }
 .image-show-hovered-container-invisible {
     display: none;
@@ -375,6 +370,8 @@ nav::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 5px 5px 5px black, -5px 10px 5px black;
+    border-radius: 20px;
 }
 
 .movie-contents-wrapper h1 {
