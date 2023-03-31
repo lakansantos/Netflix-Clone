@@ -20,15 +20,14 @@ nav {
     height: 60px;
     padding: 0px 50px;
     width: 100%;
-    z-index: 101;
+    z-index: 111;
     position: fixed;
     justify-content: space-between;
     transition: .7s ease-in-out;
 }
 
 .nav__netflix-logo {
-    height: 70;
-    width: 50px;
+    width: 70px;
 }
 
 .links-section {
@@ -311,6 +310,7 @@ nav::after {
     z-index: 100;
     position: relative;
 }
+
 .row-movie-image-background, .row-movie-image-poster:hover {
     cursor: pointer;
     pointer-events: auto;
@@ -347,17 +347,17 @@ nav::after {
     z-index: 110;
     top: -40%;
     background-color: #222;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 500px;
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     pointer-events: auto;
 }
 
 .movie-background {
-    height: 50%;
-    border-radius: 20px 20px 0 0;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
 }
 .image-show-hovered-container-invisible {
     display: none;
@@ -371,7 +371,7 @@ nav::after {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 5px 5px 5px black, -5px 10px 5px black;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .movie-contents-wrapper h1 {

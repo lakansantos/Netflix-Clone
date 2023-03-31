@@ -5,9 +5,17 @@ import {BiBell} from 'react-icons/bi'
 import avatarNetflixLogo from '/src/assets/images/avatar.png'
 import {IoMdArrowDropdown} from 'react-icons/io'
 import { useState, useEffect } from 'react'
+import cx from 'classnames'
 const Navbar = () => {
 
     const [showNav, setShowNav] = useState(false)
+
+    const navStyleClassName = cx(
+        '',
+        showNav &&
+        'rgb(37, 36, 36)'
+    )
+
     useEffect(() => {
         const handleShow = () => {
             if(window.scrollY > 30){
@@ -24,7 +32,9 @@ const Navbar = () => {
     return (
         <nav 
         style={{
-            backgroundColor: `${showNav ? 'rgba(0, 0, 0, .9)' : ''}`}}>
+            backgroundColor: 
+            `${navStyleClassName}`}}
+            >
             <div className="links-section">
                 <img src={netflixLogo} alt="" className="nav__netflix-logo"/>
                 <ul>
